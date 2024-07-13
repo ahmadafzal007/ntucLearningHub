@@ -1,0 +1,37 @@
+name: Deploy ntuc LearningHub
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Source
+        uses: actions/checkout@v4
+
+      - name: Login to Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
+
+      - name: Build Docker Image
+        run: docker build -t ahmadafzal007/ntuclearninghub:latest .
+
+      - name: Publish Image to Docker Hub
+        run: docker push ahmadafzal007/ntuclearninghub:latest
+
+  deploy:
+    needs: build
+    runs-on: self-hosted 
+    steps:
+      - name: Pull image from Docker Hub
+        run: docker pull ahmadafzal007/ntuclearninghub:latest
+
+      - name: Delete old container
+        run: |
+          docker stop ntuc-container || true
+          docker rm ntuc-container || true
+
+      - name: Run Docker Container
+        run: docker run -d -p 4000:80 --name ntuc-container ahmadafzal007/ntuclearninghub:latest
