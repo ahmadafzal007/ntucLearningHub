@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "soundFile": "C:\\Users\\Ahmad Afzal\\Desktop\\Avatar3\\r3f-lipsync-tutorial\\public\\audios\\6.future.wav",
+    "duration": 7.60
+  },
+  "mouthCues": [
+    { "start": 0.00, "end": 0.14, "value": "X" },
+    { "start": 0.14, "end": 0.19, "value": "D" },
+    { "start": 0.19, "end": 0.65, "value": "B" },
+    { "start": 0.65, "end": 0.79, "value": "E" },
+    { "start": 0.79, "end": 0.93, "value": "F" },
+    { "start": 0.93, "end": 1.06, "value": "B" },
+    { "start": 1.06, "end": 1.14, "value": "A" },
+    { "start": 1.14, "end": 1.51, "value": "B" },
+    { "start": 1.51, "end": 1.58, "value": "C" },
+    { "start": 1.58, "end": 1.65, "value": "B" },
+    { "start": 1.65, "end": 1.73, "value": "A" },
+    { "start": 1.73, "end": 1.84, "value": "B" },
+    { "start": 1.84, "end": 2.05, "value": "E" },
+    { "start": 2.05, "end": 2.12, "value": "B" },
+    { "start": 2.12, "end": 2.20, "value": "A" },
+    { "start": 2.20, "end": 2.42, "value": "B" },
+    { "start": 2.42, "end": 2.49, "value": "C" },
+    { "start": 2.49, "end": 2.98, "value": "B" },
+    { "start": 2.98, "end": 3.05, "value": "C" },
+    { "start": 3.05, "end": 3.19, "value": "B" },
+    { "start": 3.19, "end": 3.27, "value": "A" },
+    { "start": 3.27, "end": 3.44, "value": "H" },
+    { "start": 3.44, "end": 3.58, "value": "C" },
+    { "start": 3.58, "end": 3.86, "value": "B" },
+    { "start": 3.86, "end": 4.00, "value": "C" },
+    { "start": 4.00, "end": 4.08, "value": "A" },
+    { "start": 4.08, "end": 4.78, "value": "B" },
+    { "start": 4.78, "end": 4.85, "value": "C" },
+    { "start": 4.85, "end": 4.99, "value": "E" },
+    { "start": 4.99, "end": 5.97, "value": "X" },
+    { "start": 5.97, "end": 6.05, "value": "B" },
+    { "start": 6.05, "end": 6.19, "value": "C" },
+    { "start": 6.19, "end": 6.61, "value": "F" },
+    { "start": 6.61, "end": 6.75, "value": "B" },
+    { "start": 6.75, "end": 7.60, "value": "X" }
+  ]
+}
