@@ -7,8 +7,12 @@ export const UI = ({ hidden, ...props }) => {
   const [recognition, setRecognition] = useState(null);
   const [isListening, setIsListening] = useState(false);
 
-  const sendMessage = () => {
-    chat(input.current.value);
+  const sendMessage = (message) => {
+    chat(message || input.current.value);
+    if(message === undefined || message === null){
+      console.log("empty message passed");
+    }
+    console.log("Message sent:", message || input.current.value);
     input.current.value = "";
   };
 
@@ -40,10 +44,10 @@ export const UI = ({ hidden, ...props }) => {
         setIsListening(false);
       };
 
-      recognitionInstance.onend = () => {
-        console.log("Voice recognition ended.");
-        setIsListening(false);
-      };
+      // recognitionInstance.onend = () => {
+      //   console.log("Voice recognition ended.");
+      //   setIsListening(false);
+      // };
 
       setRecognition(recognitionInstance);
       recognitionInstance.start();
@@ -110,7 +114,7 @@ export const UI = ({ hidden, ...props }) => {
             }}
           />
           <button
-            onClick={sendMessage}
+            onClick={() => sendMessage()}
             className="bg-blue-500 hover:bg-blue-600 text-white p-4 px-5 font-semibold uppercase rounded-md"
           >
             Send
