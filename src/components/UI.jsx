@@ -67,7 +67,7 @@ export const UI = ({ hidden, ...props }) => {
         <div className="w-full flex flex-col items-end justify-center gap-4">
           <button
             onClick={() => setCameraZoomed(!cameraZoomed)}
-            className="pointer-events-auto bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-md"
+            className="pointer-events-auto bg-blue-700 hover:bg-blue-900 text-white p-4 rounded-md"
           >
             {cameraZoomed ? (
               <svg
@@ -115,14 +115,14 @@ export const UI = ({ hidden, ...props }) => {
           />
           <button
             onClick={() => sendMessage()}
-            className="bg-blue-500 hover:bg-blue-600 text-white p-4 px-5 font-semibold uppercase rounded-md"
+            className="bg-blue-700 hover:bg-blue-900 text-white p-4 px-5 font-semibold uppercase rounded-md"
           >
             Send
           </button>
           <button
             onClick={startListening}
-            className={`pointer-events-auto bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-md ${
-              isListening ? "bg-blue-700" : ""
+            className={`pointer-events-auto bg-blue-700 hover:bg-blue-800 text-white p-4 rounded-md ${
+              isListening ? "bg-blue-900" : ""
             }`}
           >
             {isListening ? (
